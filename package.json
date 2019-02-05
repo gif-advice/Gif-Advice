@@ -1,0 +1,28 @@
+{
+  "name": "Gif-Advice",
+  "version": "1.0.0",
+  "description": "An advice app, with the help of Giphy images",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gif-advice/Gif-Advice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gif-advice/Gif-Advice/issues"
+  },
+  "homepage": "https://github.com/gif-advice/Gif-Advice#readme",
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
