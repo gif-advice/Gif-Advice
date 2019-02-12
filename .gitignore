@@ -81,9 +81,6 @@ typings/
 # dotenv environment variables file
 .env
 
-# next.js environment variables file
-next.config.js
-
 ### OSX ###
 *.DS_Store
 .AppleDouble

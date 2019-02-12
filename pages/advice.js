@@ -1,26 +1,29 @@
-import fetch from 'isomorphic-unfetch'
-import getConfig from 'next/config'
-const {publicRuntimeConfig} = getConfig()
+import Nav from '../components/Nav'
 
-const Advice = (props) => (
-  <div>
-    <h2>{props.advice}</h2>
-    <img src={props.giphy} alt="Giphy"></img>
+const Advice = () => (
+  <div className={"advice"}>
+    <Nav className={"nav"}/>
+    <div className={"body"}>
+      <h1>ADVICE FROM US</h1>
+    </div>
+    <style jsx>{`
+      .advice {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "nav body"
+      }
+      .nav {
+        grid-area: nav;
+      }
+      .body {
+        margin-top: 40px;
+        grid-area: body;
+      }
+      h1 {
+        text-align: center;
+      }
+    `}</style>
   </div>
 )
-
-Advice.getInitialProps = async function() {
-  const adviceRes = await fetch('https://api.adviceslip.com/advice')
-  const adviceData = await adviceRes.json()
-  const advice = adviceData.slip.advice
-
-  const giphyRes = await fetch(`http://api.giphy.com/v1/gifs/translate?s=${advice}&weirdness=5&api_key=${publicRuntimeConfig.API_KEY}`)
-  const giphyData = await giphyRes.json()
-
-  return {
-    advice: advice,
-    giphy: giphyData.data.images.original.url
-  }
-}
 
 export default Advice
