@@ -5,42 +5,79 @@ const {publicRuntimeConfig} = getConfig()
 
 const Index = (props) => (
   <div className={"home"}>
-    <Nav className={"nav"}/>
     <div className={"body"}>
-      <h1>WELCOME TO GIF ADVICE</h1>
+      <header><link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Hind+Siliguri" rel="stylesheet"/></header>
+      <Nav className={"nav"}/>
       <div className={"section"}>
         <img src={props.giphy} alt="Giphy"></img>
-        <h2>{props.advice}</h2>
+        <p>{props.advice}</p>
       </div>
     </div>
     <style jsx>{`
       .home {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-template-areas: "nav body"
+        // display:flex;
+        // background-color: #D9D9D9;
+        box-shadow: 0px -10px 10px -10px black;
+
       }
       .nav {
-        grid-area: nav;
+        float: left;
+        width: 257px;
+        // box-shadow: -10px 0px 10px 1px rgba(68,68,68,0.6);
+
+
       }
       .body {
-        margin-top: 40px;
-        grid-area: body;
+
+        background-color:#F9CF00; 
+        margin: 0 auto;
+        width:960px;
       }
-      h1 {
+
+      header {
+        background-image: url("./static/headerImg.jpg");
+        background-repeat: no-repeat;
+        width: 960px;
+        height: 300px;
         text-align: center;
+        font-size: 50px;
+        justify-content: center;
+        padding: 40px;
+        border-bottom: 15px solid gray;
+        // box-shadow: 5px 5px 5px 5px rgba(68,68,68,0.6);
+
       }
       .section {
-        background-color: rgb(224, 165, 123);
-        margin: 20px;
-        padding: 20px;
+        width:740px;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: white;
+        justify-content: center;
+        float:left;
+        margin-left: 20px;
+        margin-top: 7px;
+        background-color:#D9D9D9;
+        box-shadow: -60px 0px 100px -90px rgba(68,68,68,0.6);
+        font-family: 'Alegreya Sans', sans-serif;
+
+
       }
       img {
         display: block;
-        margin: 20px auto;
+        // padding-top: 30px;
+        margin: 5px auto;
+        // border: 2px solid black;
+
       }
-      h2 {
+      p {
+        color: white;
         text-align: center;
+        margin-top:20px;
+        font-size: 30px;
+        letter-spacing: 4px;
       }
+
     `}</style>
   </div>
 )

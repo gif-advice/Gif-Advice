@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Nav = () => (
   <div className={"nav"}>
-    <img src='../static/logo.png' className={"logo"}/>
+    <img src='../static/logo.jpg' className={"logo"}/>
     <Link href="/">
       <a>HOME</a>
     </Link>
@@ -14,21 +14,39 @@ const Nav = () => (
     </Link>
     <style jsx>{`
       .nav {
-        border-right: 5px solid white;
+        height:100%;
+        float: left;
+        // background-color: white;
+        // box-shadow: -10px 0px 10px 1px #aaaaaa;
+
+
       }
       .logo {
-        width: 100%;
+        // border-top: 4px solid black;
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
       }
       a {
-        background-color: rgb(233, 130, 80);
-        color: white;
+        background-color: white;
+        color: orange;
         display: block;
-        font-size: 20px;
-        margin-top: 20px;
-        padding: 20px;
+        font-size: 15px;
         text-align: center;
         text-decoration: none;
-        width: 100%;
+        width:200px;
+        height:50px;
+        padding: 15px;
+        // margin-bottom: 5px;
+        margin-top:10px;
+        // border-style: solid;
+        // border-color: black;
+        // border: 2px solid gray;
+        font-family: 'Alegreya Sans', sans-serif;
+        letter-spacing: 3px;
+
+
+  
       }
     `}</style>
     <style global jsx>{`
@@ -39,6 +57,10 @@ const Nav = () => (
       }
       body {
         font-family: sans-serif;
+        background-color: #4484CE;
+        // background-color: white;
+
+        ;
       }
     `}</style>
   </div>

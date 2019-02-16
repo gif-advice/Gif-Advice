@@ -9,7 +9,7 @@ const Advice = () => (
     <style jsx>{`
       .advice {
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns:1fr 8fr;
         grid-template-areas: "nav body"
       }
       .nav {
@@ -18,9 +18,12 @@ const Advice = () => (
       .body {
         margin-top: 40px;
         grid-area: body;
+        display:flex;
+        justify-content: center;
       }
       h1 {
         text-align: center;
+        background-color: #F19F4D;
       }
     `}</style>
   </div>
