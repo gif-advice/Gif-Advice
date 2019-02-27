@@ -6,7 +6,11 @@ const {publicRuntimeConfig} = getConfig()
 const Index = (props) => (
   <div className={"home"}>
     <div className={"body"}>
-      <header><link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Hind+Siliguri" rel="stylesheet"/></header>
+      <head><link href="https://fonts.googleapis.com/css?family=Aladin|Caudex|Contrail+One|Marmelad|Shrikhand" rel="stylesheet"/></head>
+      <header>
+        <div className={"yellowBox"}>You need random advice? </div>
+        <div>You've come to the right place.</div>
+      </header>
       <Nav className={"nav"}/>
       <div className={"section"}>
         <img src={props.giphy} alt="Giphy"></img>
@@ -15,67 +19,65 @@ const Index = (props) => (
     </div>
     <style jsx>{`
       .home {
-        // display:flex;
         // background-color: #D9D9D9;
-        box-shadow: 0px -10px 10px -10px black;
-
+        width:100%;
+        
       }
       .nav {
         float: left;
-        width: 257px;
-        // box-shadow: -10px 0px 10px 1px rgba(68,68,68,0.6);
-
-
       }
       .body {
-
-        background-color:#F9CF00; 
         margin: 0 auto;
         width:960px;
+
       }
 
       header {
-        background-image: url("./static/headerImg.jpg");
-        background-repeat: no-repeat;
-        width: 960px;
-        height: 300px;
-        text-align: center;
+        height: 250px;
+        width:100%;
         font-size: 50px;
-        justify-content: center;
-        padding: 40px;
-        border-bottom: 15px solid gray;
-        // box-shadow: 5px 5px 5px 5px rgba(68,68,68,0.6);
-
+        color: black;
+        letter-spacing: 2px;
+        font-family: Shrikhand;
+        border-bottom: 2px solid black;
+        padding: 50px;
       }
+
       .section {
-        width:740px;
+        width:750px;
         margin: 0 auto;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding: 40px;
+        // padding-top: 40px;
+        // padding-bottom: 40px;
         background-color: white;
         justify-content: center;
         float:left;
-        margin-left: 20px;
-        margin-top: 7px;
-        background-color:#D9D9D9;
-        box-shadow: -60px 0px 100px -90px rgba(68,68,68,0.6);
-        font-family: 'Alegreya Sans', sans-serif;
+        margin-left: 10px;
+        margin-top: 9px;
+        font-family: 'Caudex', sans-serif;
+        // background-color: white;
+        background-color: #F9CF00;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
 
 
       }
       img {
         display: block;
-        // padding-top: 30px;
         margin: 5px auto;
-        // border: 2px solid black;
-
+        border-radius: 10px;
+        padding: 10px;
+        border: 5px solid white;
+        height: auto;
       }
       p {
-        color: white;
+        // border-top: 2px solid white;
+        color: #4484CE;
         text-align: center;
         margin-top:20px;
         font-size: 30px;
-        letter-spacing: 4px;
+        letter-spacing: 3px;
       }
 
     `}</style>

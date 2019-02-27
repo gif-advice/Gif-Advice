@@ -2,7 +2,6 @@ import Link from 'next/link'
 
 const Nav = () => (
   <div className={"nav"}>
-    <img src='../static/logo.jpg' className={"logo"}/>
     <Link href="/">
       <a>HOME</a>
     </Link>
@@ -12,24 +11,30 @@ const Nav = () => (
     <Link href="/advice">
       <a>ADVICE</a>
     </Link>
+    <img src='../static/logo.jpg' className={"logo"}/>
+
     <style jsx>{`
       .nav {
         height:100%;
         float: left;
-        // background-color: white;
-        // box-shadow: -10px 0px 10px 1px #aaaaaa;
-
+        // background-color: gray;
 
       }
       .logo {
-        // border-top: 4px solid black;
+        // padding:2px;
+        height: 155px;
         width: 200px;
-        height: 150px;
+        margin-top: 10px;
         object-fit: cover;
+        background-color: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+
       }
       a {
-        background-color: white;
-        color: orange;
+        background-color: #4484CE;
+        color: #F19F4D;
         display: block;
         font-size: 15px;
         text-align: center;
@@ -37,15 +42,13 @@ const Nav = () => (
         width:200px;
         height:50px;
         padding: 15px;
-        // margin-bottom: 5px;
         margin-top:10px;
-        // border-style: solid;
-        // border-color: black;
-        // border: 2px solid gray;
-        font-family: 'Alegreya Sans', sans-serif;
+        font-family: 'Caudex', sans-serif;
         letter-spacing: 3px;
+        font-size:17px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-
+      
   
       }
     `}</style>
@@ -57,7 +60,7 @@ const Nav = () => (
       }
       body {
         font-family: sans-serif;
-        background-color: #4484CE;
+        // background-color: #4484CE;
         // background-color: white;
 
         ;
