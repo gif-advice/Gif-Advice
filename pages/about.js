@@ -22,7 +22,8 @@ const About = () => (
         grid-template-areas: "nav body"
       }
       .nav {
-        grid-area: nav;
+        float: left;
+        width: 257px;
       }
       .body {
         margin-top: 40px;

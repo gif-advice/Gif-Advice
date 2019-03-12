@@ -16,10 +16,10 @@ const Advice = () => (
         grid-area: nav;
       }
       .body {
-        margin-top: 40px;
-        grid-area: body;
-        display:flex;
-        justify-content: center;
+        background-color:#F9CF00; 
+        margin: 0 auto;
+        width:960px;
+
       }
       h1 {
         text-align: center;
