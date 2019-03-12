@@ -19,7 +19,7 @@ const Index = (props) => (
     </div>
     <style jsx>{`
       .home {
-        // background-color: #D9D9D9;
+        background-color: #0E1428;
         width:100%;
         
       }
@@ -28,7 +28,8 @@ const Index = (props) => (
       }
       .body {
         margin: 0 auto;
-        width:960px;
+        background-color: #0E1428;
+
 
       }
 
@@ -36,28 +37,29 @@ const Index = (props) => (
         height: 250px;
         width:100%;
         font-size: 50px;
-        color: black;
+        color: white;
         letter-spacing: 2px;
         font-family: Shrikhand;
         border-bottom: 2px solid black;
         padding: 50px;
+        background-color: #F9CF00;
       }
 
       .section {
-        width:750px;
+        width:80%;
         margin: 0 auto;
         padding: 40px;
-        // padding-top: 40px;
-        // padding-bottom: 40px;
         background-color: white;
         justify-content: center;
-        float:left;
-        margin-left: 10px;
-        margin-top: 9px;
+        margin-left: 237px;
+        margin-top: 35px;
+        margin-bottom: 50px;
         font-family: 'Caudex', sans-serif;
-        // background-color: white;
-        background-color: #F9CF00;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        // background-color: #F9CF00;
+        // background-color: #F9CF00;
+        border-radius:10px;
+
+        // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 
 

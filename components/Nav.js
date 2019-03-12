@@ -17,7 +17,10 @@ const Nav = () => (
       .nav {
         height:100%;
         float: left;
+        margin-left: 20px;
+        margin-top: 26px;
         // background-color: gray;
+        
 
       }
       .logo {
@@ -33,7 +36,8 @@ const Nav = () => (
 
       }
       a {
-        background-color: #4484CE;
+        // background-color: #4484CE;
+        background-color: white;
         color: #F19F4D;
         display: block;
         font-size: 15px;
@@ -57,11 +61,14 @@ const Nav = () => (
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+
       }
       body {
         font-family: sans-serif;
         // background-color: #4484CE;
         // background-color: white;
+        background-color: #0E1428;
+
 
         ;
       }
