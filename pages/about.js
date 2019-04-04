@@ -3,44 +3,85 @@ import Nav from '../components/Nav'
 const About = () => (
 
   <div className={"about"}>
-    <Nav className={"nav"}/>
     <div className={"body"}>
-      <h1>OUR TEAM</h1>
+    <head><link href="https://fonts.googleapis.com/css?family=Aladin|Caudex|Contrail+One|Marmelad|Shrikhand" rel="stylesheet"/></head>
+      
+      <header>OUR TEAM</header>
+      <Nav className={"nav"}/>
+      
+      <div className={"container"}>
       <div className={"section"}>
+      <div className={"name"}>Brai Frauen</div>
+
         <img src='../static/brai.jpg'/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>I’m a UI Developer. I love creating and designing sites. In my free time you’ll find me ether at a art gallery checking out new work or find me a flea market scoring cool vintage items.</p>
       </div> 
       <div className={"section"}>
+      <div className={"name"}>Katherine Smith</div>
         <img src='../static/katherine.jpg'/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>For the past 3 years, I worked in the veterinary field, first as a vet assistant and then as a vet tech. Before that, I was in the Air Force for 4 years where I worked as a weather forecaster. I also have a degree in Aeronautical Science and Engineering from the University of California, Davis. </p>
       </div>
     </div>
+    </div>
     <style jsx>{`
-      .about {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        grid-template-areas: "nav body"
-      }
+      
       .nav {
         float: left;
-        width: 257px;
       }
       .body {
-        margin-top: 40px;
-        grid-area: body;
+        margin: 0 auto;
+        background-color: #0E1428;
+
       }
-      h1 {
+      header {
+        height: 250px;
+        width:100%;
+        font-size: 100px;
+        color: white;
+        letter-spacing: 2px;
         text-align: center;
+        font-family: Shrikhand;
+        border-bottom: 2px solid black;
+        padding: 50px;
+        background-color: #F9CF00;
+      }
+      .name {
+        position: absolute;
+        font-size: 60px;
+        z-index: 10;
+        color:  #F9CF00;
+        margin-left: 300px;
+        font-family: 'Caudex';
+        letter-spacing: 3px;
+        // font-style: bold;
+      }
+      p{
+        display:block;
+        font-family: 'Caudex', sans-serif;
+        margin-block-start: 7em;
+        margin-block-end: 1em;
+        margin-inline-start: 30px;
+        width: 500px;
       }
       .section {
-        background-color: rgb(224, 165, 123);
-        margin: 20px;
-        padding: 20px;
+        display: flex;
+        // flex-wrap: wrap;
+        width:80%;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: white;
+        // justify-content: center;
+        margin-left: 237px;
+        margin-top: 34px;
+        margin-bottom: 5px;
+        border-radius:10px;
       }
       img {
-        max-width: 200px;
-        display: block;
-        margin: 20px auto;
+        max-width: 350px;
+        max-height: 350px;
+        // margin: 20px auto;
+        vertical-align: middle;
+        position: relative;
       }
     `}</style>
   </div>

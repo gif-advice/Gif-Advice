@@ -29,8 +29,6 @@ const Index = (props) => (
       .body {
         margin: 0 auto;
         background-color: #0E1428;
-
-
       }
 
       header {
@@ -39,6 +37,7 @@ const Index = (props) => (
         font-size: 50px;
         color: white;
         letter-spacing: 2px;
+        text-align: center;
         font-family: Shrikhand;
         border-bottom: 2px solid black;
         padding: 50px;
@@ -52,17 +51,10 @@ const Index = (props) => (
         background-color: white;
         justify-content: center;
         margin-left: 237px;
-        margin-top: 35px;
+        margin-top: 34px;
         margin-bottom: 50px;
         font-family: 'Caudex', sans-serif;
-        // background-color: #F9CF00;
-        // background-color: #F9CF00;
         border-radius:10px;
-
-        // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-
-
 
       }
       img {
@@ -74,7 +66,6 @@ const Index = (props) => (
         height: auto;
       }
       p {
-        // border-top: 2px solid white;
         color: #4484CE;
         text-align: center;
         margin-top:20px;
