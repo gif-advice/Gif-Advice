@@ -1,17 +1,25 @@
 import Link from 'next/link'
 
 const Nav = () => (
+
   <div className={"nav"}>
-    <Link href="/">
+    
+   <Link href="/">
       <a>HOME</a>
     </Link>
-    <Link href="/about">
+  
+    
+   <Link href="/about">
       <a>ABOUT</a>
     </Link>
+  
+   
     <Link href="/advice">
       <a>ADVICE</a>
     </Link>
+    
     <img src='../static/logo.jpg' className={"logo"}/>
+
 
     <style jsx>{`
       .nav {
@@ -33,7 +41,6 @@ const Nav = () => (
       }
       a {
         border-radius:10px;
-        color: #4484CE;
         background-color: white;
         display: block;
         font-size: 15px;
@@ -47,11 +54,18 @@ const Nav = () => (
         letter-spacing: 3px;
         font-size:17px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-      
-  
       }
-    `}</style>
+
+      .mobileNav {
+        display: none;
+      }
+      @media (max-width: 765px) {
+        .nav {
+          display: none;
+        }
+      }
+    `} </style>
+
     <style global jsx>{`
       * {
         box-sizing: border-box;
@@ -62,12 +76,10 @@ const Nav = () => (
       body {
         font-family: sans-serif;
         background-color: #0E1428;
-
-
-        ;
       }
+
     `}</style>
-  </div>
+    </div>
 )
 
 export default Nav

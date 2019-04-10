@@ -1,4 +1,5 @@
 import Nav from '../components/Nav'
+import MobileNav from '../components/MobileNav'
 
 const Advice = () => (
   <div className={"advice"}>
@@ -7,11 +8,12 @@ const Advice = () => (
       
       <header>ADVICE FROM US</header>
       <Nav className={"nav"}/>
-
+      <MobileNav className={"mobNav"}/>
+      
     </div>
     <style jsx>{`
     
-      }
+      
       .nav {
         float: left;
       }
@@ -34,6 +36,15 @@ const Advice = () => (
       h1 {
         text-align: center;
         background-color: #F19F4D;
+      }
+
+
+      
+      @media (max-width: 768px) {
+        header {
+          width:100%;
+          font-size: 25px;
+        }
       }
     `}</style>
   </div>

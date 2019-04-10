@@ -1,37 +1,35 @@
 import fetch from 'isomorphic-unfetch'
 import getConfig from 'next/config'
 import Nav from '../components/Nav'
+import MobileNav from '../components/MobileNav'
 const {publicRuntimeConfig} = getConfig()
 
 const Index = (props) => (
-  <div className={"home"}>
     <div className={"body"}>
       <head><link href="https://fonts.googleapis.com/css?family=Aladin|Caudex|Contrail+One|Marmelad|Shrikhand" rel="stylesheet"/></head>
       <header>
-        <div className={"yellowBox"}>You need random advice? </div>
-        <div>You've come to the right place.</div>
+      You need random advice?
+      You've come to the right place.
       </header>
       <Nav className={"nav"}/>
+      <MobileNav className={"mobNav"}/>
       <div className={"section"}>
         <img src={props.giphy} alt="Giphy"></img>
         <p>{props.advice}</p>
       </div>
-    </div>
     <style jsx>{`
-      .home {
-        background-color: #0E1428;
-        width:100%;
-        
-      }
+     
       .nav {
         float: left;
       }
       .body {
         margin: 0 auto;
         background-color: #0E1428;
+        width:100%;
       }
 
       header {
+
         height: 250px;
         width:100%;
         font-size: 50px;
@@ -72,7 +70,29 @@ const Index = (props) => (
         font-size: 30px;
         letter-spacing: 3px;
       }
+      .mobNav {
+        display: none;
+      }
+      @media only screen and (max-width: 768px) {
+        header {
+          width:100%;
+          font-size: 25px;
+        }
+        .section{
+          width:100%;
+          position: relative;
+          margin: 0 auto;
+          top: 50px;
+          border-radius: 1px;
+        }
+        img {
+          position: relative;
+          margin: 0 auto;
+          width: 100%;
 
+        }
+      }
+    
     `}</style>
   </div>
 )
