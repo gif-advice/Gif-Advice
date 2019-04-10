@@ -45,7 +45,6 @@ const MobileNav = () => (
         }
         .mobileLink {
           
-          color:black;
           position: inline-block;
           text-decoration:none;
           font-family: 'Caudex', sans-serif;

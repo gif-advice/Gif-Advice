@@ -115,7 +115,7 @@ const About = () => (
         border-radius: 25px;
         background-color:#4484CE;
         text-align: center;
-        padding: 1%;
+        padding: 15px;
         letter-spacing:2px;
 
 
@@ -128,7 +128,7 @@ const About = () => (
         margin-top: 250px;
         margin-left: 650px;
         border-radius: 25px;
-        padding: 1%;
+        padding: 15px;
         text-align: center;
         letter-spacing:2px;
         // border: 2px solid #F9CF00;
@@ -138,6 +138,7 @@ const About = () => (
         font-family: Caudex;
         color: white;
         font-size: 17px;
+        padding: 20px;
       }
       .mobNav {
         display: none;
@@ -161,7 +162,7 @@ const About = () => (
           position: absolute;
           margin-left: 20px;
           width: 100px;
-          top: 270px;
+          top: 295px;
         }
         p{
           height: 30%;
@@ -169,7 +170,8 @@ const About = () => (
           position: absolute;
           width: 80%;
           margin: auto;
-          top: 370px;
+          top: 400px;
+          line-spacing: 20px;
          }
         .section {
           width:100%;
@@ -179,6 +181,10 @@ const About = () => (
           top: 50px;
           margin-bottom: 20px;
           border-radius: 1px;
+          font-size: 10px;
+          // color: #4484CE;
+
+          
 
         }
         img {
@@ -186,22 +192,30 @@ const About = () => (
           width: 80%;
           position:absolute;
       }
-     .Linkbutton {
-      position: absolute;
-      margin: 0 auto;
-      bottom: 70px;
-      // background-color: lightgray;
-      border-radius: 1px;
-      margin-right: 10px;
-     }
-      .GitHub {
-      position: absolute;
-      margin: 0 auto;
-      bottom: 70px;
-      right: 50px;
-      // background-color: white;
-      border-radius: 1px;
-      border-left: 2px solid black;
+      a {
+        margin-right: 30px;
+        text-decoration: none;
+
+      }
+        .Linkbutton {
+          position: absolute;
+          margin: 0 auto;
+          bottom: 70px;
+          border-radius: 25px;
+          width:140px;
+          font-size: 15px;
+
+      }
+        .GitHub {
+          position: absolute;
+          margin: 0 auto;
+          bottom: 70px;
+          right: 90px;
+          border-radius: 25px;
+          width:140px;
+          height: 50px;
+          font-size: 15px;
+
       }
     `}</style>
   </div>

@@ -40,6 +40,8 @@ const Nav = () => (
 
       }
       a {
+        color: #4484CE;
+
         border-radius:10px;
         background-color: white;
         display: block;
